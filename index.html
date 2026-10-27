@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <title> StockFlow </title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title"> StockFlow </h1>
+            <p class="description"> ALL-IN-ONE PRODUCT MANAGEMENT </p>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input input-title" placeholder="Title" onkeyup="setTitle()">
+            <input type="text" class="input input-price" placeholder="Price" onkeyup="setPrice()">
+            <input type="text" class="input input-taxes" placeholder="Taxes" onkeyup="setTaxes()">
+            <input type="text" class="input input-ads" placeholder="Ads" onkeyup="setAds()">
+            <input type="text" class="input input-discount" placeholder="Discount" onkeyup="setDiscount()">
+            <div class="box-total">
+                <span class="title">Total : </span>
+                <input type="text" class="input input-total" readonly>
+            </div>
+            <input type="text" class="input input-count" placeholder="Count" onkeyup="setCount()">
+            <input type="text" class="input input-category" placeholder="Category" onkeyup="setCategory()">
+            <button class="btn" onclick="addProduct()"> + Add Product </button>
+        </div>
+        <div class="search-box">
+            <div class="search-input">
+                <div class="icon-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input class="btn search-value" type="text" placeholder="Search by title or category...">
+            </div>
+            <div class="btn-search">
+                <button class="btn" onclick="byTitle()"> Search by Title </button>
+                <button class="btn" onclick="byCategory()"> Search by Category </button>
+            </div>
+            <button class="drop" onclick="dropAll()"> Delete All </button>
+        </div>
+        <div class="table-data">
+        </div>
+        <div class="version">
+            <span class="description"> Engineered by Berrada Mehdi © 2026 </span>
+        </div>
+        <div class="message-box">
+        </div> 
+    </div>
+
+    <script src="https://kit.fontawesome.com/c3d5b4a9ba.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
